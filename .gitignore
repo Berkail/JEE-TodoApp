@@ -1,0 +1,39 @@
+# General
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
+# Maven
+target/
+
+# Gradle
+build/
+.gradle/
+out/
+
+# IDEs
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+*.iws
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tomcat
+lib/
+work/
+temp/
+logs/
+
+# Sensitive files
+*.key
+*.pem
+*.crt
+*.env
+config.properties
