@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Home</title>
@@ -14,10 +14,13 @@
 		<div class="form-container sign-up-container">
 			<form action="Signup" method="post">
 				<h1>Create Account</h1>
-				<input type="text" placeholder="Username" name="username"/> 
-				<input type="email"placeholder="Email" name="email"/> 
-				<input type="password" placeholder="Password" name="password"/>
-				<input type="password" placeholder="Confirm Password" name="confPassword"/>
+				<div th:if="${error}" style="color: red;">
+					<p>${error}</p>
+				</div>
+				<input type="text" placeholder="Username" name="username" required/> <input
+					type="email" placeholder="Email" name="email" required/> <input
+					type="password" placeholder="Password" name="password" required/> <input
+					type="password" placeholder="Confirm Password" name="confPassword" required/>
 				<button>Sign Up</button>
 			</form>
 		</div>
@@ -26,8 +29,8 @@
 		<div class="form-container sign-in-container">
 			<form action="Login" method="post">
 				<h1>Login</h1>
-				<input type="email" placeholder="Email" name="email"/>
-				<input type="password" placeholder="Password" name="password"/>
+				<input type="email" placeholder="Email" name="email" required/> <input
+					type="password" placeholder="Password" name="password" required/>
 				<button>Login</button>
 			</form>
 		</div>

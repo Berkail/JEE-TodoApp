@@ -25,6 +25,19 @@
 			<version>2.0.1</version>
 		</dependency>
 		<dependency>
+			<groupId>jakarta.enterprise</groupId>
+			<artifactId>jakarta.enterprise.cdi-api</artifactId>
+			<version>3.0.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>jakarta.servlet</groupId>
+			<artifactId>jakarta.servlet-api</artifactId>
+			<version>5.0.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>6.6.4.Final</version>
@@ -46,9 +59,9 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-		    <groupId>org.thymeleaf</groupId>
-		    <artifactId>thymeleaf</artifactId>
-		    <version>3.1.2.RELEASE</version>
+			<groupId>org.thymeleaf</groupId>
+			<artifactId>thymeleaf</artifactId>
+			<version>3.1.2.RELEASE</version>
 		</dependency>
 	</dependencies>
 </project>
